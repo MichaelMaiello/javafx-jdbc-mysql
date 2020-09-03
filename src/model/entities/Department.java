@@ -5,24 +5,22 @@ import java.io.Serializable;
 public class Department implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
-	//Atributos 
+	//Atributos
 	private Integer id;
 	private String name;
 	
 	
-	//Construtor 
+	//Construtor
 	public Department() {
 	}
 
 	public Department(Integer id, String name) {
-		super();
 		this.id = id;
 		this.name = name;
 	}
-	
-	
-	//Métodos de acesso 
 
+	
+	//Métodos de acesso
 	public Integer getId() {
 		return id;
 	}
@@ -38,6 +36,8 @@ public class Department implements Serializable{
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+	
 
 	@Override
 	public int hashCode() {
@@ -63,9 +63,11 @@ public class Department implements Serializable{
 			return false;
 		return true;
 	}
+	
+	
 
 	@Override
 	public String toString() {
-		return "Department [id=" + id + ", name=" + name + "]";
+		return "Departamento [id=" + id + ", name=" + name + "]";
 	}
 }
